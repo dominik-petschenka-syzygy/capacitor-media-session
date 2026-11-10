@@ -45,11 +45,11 @@
     "@capacitor/core": "^8.0.0",
     "@capacitor/docgen": "^0.0.18",
     "@ionic/eslint-config": "^0.3.0",
-    "@ionic/prettier-config": "^1.0.1",
+    "@ionic/prettier-config": "^4.0.0",
     "@ionic/swiftlint-config": "^1.1.2",
     "eslint": "^7.11.0",
-    "prettier": "~2.3.0",
-    "prettier-plugin-java": "~1.0.2",
+    "prettier": "^3.9.10",
+    "prettier-plugin-java": "^2.11.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.32.0",
     "swiftlint": "^1.0.1",
@@ -58,7 +58,6 @@
   "peerDependencies": {
     "@capacitor/core": "^8.0.0"
   },
-  "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
