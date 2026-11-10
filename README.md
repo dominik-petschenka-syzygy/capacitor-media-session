@@ -11,14 +11,22 @@ Another problem with audio playback (using web standards, e.g. an `<audio>` elem
 
 ## Install
 
-If you are using Capacitor 6 just install the latest 4.x version of this plugin using
+This version of the plugin requires Capacitor 8.
 
 ```bash
 npm install @jofr/capacitor-media-session
 npx cap sync
 ```
 
-For Capacitor 5 you can install the 3.x version (`npm install @jofr/capacitor-media-session@3`) instead, for Capacitor 4 you can install the 2.x version of this plugin (`npm install @jofr/capacitor-media-session@2`) and for Capacitor 3 the 1.x version of this plugin (`npm install @jofr/capacitor-media-session@1`).
+For older Capacitor versions, use an earlier plugin release whose `@capacitor/core` peer dependency matches your Capacitor version.
+
+### Requirements
+
+- Node.js 22 or newer for development and publishing.
+- Android SDK 36, with Android 7.0 (API 24) as the minimum supported Android version.
+- Java 21 for building the Android plugin.
+
+The plugin declares the `FOREGROUND_SERVICE` and `FOREGROUND_SERVICE_MEDIA_PLAYBACK` permissions and its `mediaPlayback` foreground service in its Android manifest. These declarations are merged into the consuming app automatically.
 
 ## Usage
 
